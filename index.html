@@ -12,6 +12,7 @@
   <base target="_blank"> <!-- open links in new tab by default -->
   <!-- Links to Google fonts to pull them for use -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <style>
     body {
   font-family: "Fira Code", Consolas, "Courier New", monospace;  /* change font */
@@ -55,7 +56,18 @@
 
     /* Simple rule to visually separate sections like your --- in Rmd */
     .sep { border-top:1px solid var(--border); margin:28px 0; }
+    .link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.link-grid a.big {
+  margin: 0; /* remove old top/bottom margins */
+}
+
   </style>
+
 </head>
 <body>
   <div class="wrap">
@@ -106,17 +118,19 @@
     <div class="sep"></div>
 
     <h2>Cold Sludge — Band Member (synthesizers, keyboards, &amp; drums)</h2>
+    <div class="link-grid">
     <a class="big" href="https://beacons.ai/coldsludge" rel="noopener noreferrer">Website — upcoming live shows, music releases, &amp; side projects</a>
     <a class="big" href="https://www.instagram.com/coldsludge/" rel="noopener noreferrer">Instagram</a>
     <a class="big" href="https://coldsludge.bandcamp.com/" rel="noopener noreferrer">Bandcamp — stream &amp; purchase</a>
     <a class="big" href="https://open.spotify.com/artist/2ASDeYcriVq6loGcZhtN5p?si=XmAvzPssSuWNXt58PohkWw" rel="noopener noreferrer">Spotify</a>
     <a class="big" href="https://music.apple.com/us/artist/cold-sludge/1563569938?at=1000l3bbu&itscg=30200&itsct=music_box_link&ls=1&app=music" rel="noopener noreferrer">Apple Music</a>
     <a class="big" href="mailto:coldsludge@gmail.com" target="_self">coldsludge@gmail.com (booking &amp; inquiries)</a>
-
+<div class="link-grid">
     <div class="sep"></div>
 
     <h2>Social Media &amp; Communities</h2>
-    <a class="big" href="https://instagram.com/n8t8m" rel="me noopener">Instagram</a>
+  <div class="link-grid">  
+  <a class="big" href="https://instagram.com/n8t8m" rel="me noopener">Instagram</a>
     <a class="big" href="https://www.snapchat.com/add/n8_t8m" rel="noopener">Snapchat</a>
     <a class="big" href="https://tiktok.com/@n8t8m" rel="noopener">TikTok</a>
     <a class="big" href="https://www.threads.net/@n8t8m?hl=en" rel="noopener">Threads</a>
@@ -125,7 +139,7 @@
     <a class="big" href="https://rateyourmusic.com/~n8t8m" rel="noopener">Rate Your Music (music)</a>
     <a class="big" href="https://www.linkedin.com/in/n8t8m/" rel="me noopener">LinkedIn (resume)</a>
     <a class="big" href="https://www.facebook.com/n8tatem/" rel="noopener">Facebook</a>
-
+<div class="link-grid">
     <div class="sep"></div>
 
     <h2>Music Streaming Playlists</h2>
