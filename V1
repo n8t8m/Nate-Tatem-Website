@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NATE TATEM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nate Tatem — links to publications, music, shows, socials, and projects.">
+  <meta property="og:title" content="Nate Tatem — Links">
+  <meta property="og:description" content="Quick hub to everything: publications, music, shows, socials, projects.">
+  <!-- Add your og:image later if you want -->
+  <!-- <meta property="og:image" content="https://natetatem.com/assets/og-image.jpg"> -->
+  <base target="_blank"> <!-- open links in new tab by default -->
+  <style>
+    :root {
+      --bg:#0b0c10; --text:#e5e7eb; --muted:#9ca3af;
+      --border:#30363d; --card:#111214; --card-hover:#17181b;
+      --accent:#7dd3fc; --accent-visited:#c084fc;
+      --pad:14px; --rad:12px;
+    }
+    html, body { background:var(--bg); color:var(--text); line-height:1.55; margin:0; }
+    .wrap { margin:2.2rem 0; padding:0 16px; max-width:none; }
+    h1, h2 { font-weight:700; }
+    a { color:var(--accent); }
+    a:visited { color:var(--accent-visited); }
+    a.big {
+      display:block; padding:var(--pad); margin:10px 0;
+      border:1px solid var(--border); border-radius:var(--rad);
+      text-decoration:none; font-weight:600; background:var(--card);
+      color:var(--text);
+    }
+    a.big:hover, a.big:focus { background:var(--card-hover); outline:none; }
+    hr { border:0; border-top:1px solid var(--border); margin:24px 0; }
+    .note, .muted { color:var(--muted); }
+
+    /* Rowed link layout (scoped to .rowlinks) */
+    .rowlinks { display:flex; flex-wrap:wrap; margin:-6px; }
+    .rowlinks .big { display:inline-block; margin:6px; flex:1 1 260px; max-width:100%; }
+    .rowlinks.cols-2 .big { flex-basis:calc(50% - 12px); }
+    .rowlinks.cols-3 .big { flex-basis:calc(33.333% - 12px); }
+    @media (max-width:540px){ .rowlinks .big { flex-basis:100%; } }
+
+    /* Simple rule to visually separate sections like your --- in Rmd */
+    .sep { border-top:1px solid var(--border); margin:28px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>NATE TATEM</h1>
+    <p><strong>Sociologist, Musician, &amp; Music Producer</strong><br>
+    <strong>Location:</strong> Bellingham, Washington, USA<br>
+    <strong>Email:</strong> 
+      <a href="mailto:n8tatem@gmail.com" target="_self">n8tatem@gmail.com</a> or 
+      <a href="mailto:natem262@gmail.com" target="_self">natem262@gmail.com</a><br>
+    <strong>Mobile (Text or Call):</strong> (262) 441-3623<br>
+    <strong>Pronouns:</strong> they, he, or she (Agender)</p>
+
+    <div class="sep"></div>
+
+    <h2>Scientific Projects &amp; Publications</h2>
+    <p class="muted">Bachelor of Arts in Sociology &amp; Certificate in Social Science Data Analysis (Western Washington University, Bellingham, WA — 2024)</p>
+    <a class="big" href="https://www.mdpi.com/2071-1050/17/19/8833" rel="noopener noreferrer">
+      Photo Portraiture Enhances Empathy for Birds with Potential Benefits for Conservation and Sustainability (Whitley et al., 2025)
+    </a>
+    <a class="big" href="https://wp.wwu.edu/nsfaward2240023/" rel="noopener noreferrer">
+      Animal Images, Empathy, and Conservation
+    </a>
+    <a class="big" href="https://osf.io/zuqg4" rel="noopener noreferrer">
+      Tripping Hazard: Psychedelics User Typologies and Differential Risks of Health-Related Outcomes (Preregistration)
+    </a>
+
+    <div class="sep"></div>
+
+    <h2>Solo Music Project</h2>
+    <div class="rowlinks cols-3">
+      <a class="big" href="https://n8t8m.bandcamp.com/" rel="noopener noreferrer">Bandcamp — name-your-price downloads &amp; back catalog</a>
+      <a class="big" href="https://open.spotify.com/artist/280AVnwGDOdUkVxobsOkqB?si=Z9UEHkCVS8CUfTJIKdWd5g" rel="noopener noreferrer">Spotify</a>
+      <a class="big" href="https://music.apple.com/us/artist/nate-tatem/1448048139" rel="noopener noreferrer">Apple Music</a>
+      <a class="big" href="https://music.youtube.com/channel/UCMEGdbPtAvLXdA23YEi4zVA?feature=share" rel="noopener noreferrer">YouTube Music</a>
+      <a class="big" href="https://tidal.com/browse/artist/10782310" rel="noopener noreferrer">TIDAL</a>
+      <a class="big" href="https://music.amazon.co.uk/artists/B07MP1PDHW/nate-tatem" rel="noopener noreferrer">Amazon Music</a>
+      <a class="big" href="https://www.iheart.com/artist/nate-tatem-32695853/" rel="noopener noreferrer">iHeart Radio</a>
+      <a class="big" href="https://www.deezer.com/us/artist/56573232" rel="noopener noreferrer">Deezer</a>
+      <a class="big" href="https://us.napster.com/artist/nate-tatem" rel="noopener noreferrer">Napster</a>
+      <a class="big" href="https://soundcloud.com/natetatem" rel="noopener noreferrer">Soundcloud</a>
+      <a class="big" href="https://audiomack.com/natem262" rel="noopener noreferrer">Audiomack</a>
+    </div>
+
+    <a class="big" href="https://docs.google.com/document/d/1abXACVfcKZyuInPH2lasOvWFJ02yWaGi-sxxujkwZ5Q/pub" rel="noopener noreferrer">
+      Project Explanation Essay: The Permutation Series (2023)
+    </a>
+
+    <div class="sep"></div>
+
+    <h2>Cold Sludge — Band Member (synthesizers, keyboards, &amp; drums)</h2>
+    <a class="big" href="https://beacons.ai/coldsludge" rel="noopener noreferrer">Website — upcoming live shows, music releases, &amp; side projects</a>
+    <a class="big" href="https://www.instagram.com/coldsludge/" rel="noopener noreferrer">Instagram</a>
+    <a class="big" href="https://coldsludge.bandcamp.com/" rel="noopener noreferrer">Bandcamp — stream &amp; purchase</a>
+    <a class="big" href="https://open.spotify.com/artist/2ASDeYcriVq6loGcZhtN5p?si=XmAvzPssSuWNXt58PohkWw" rel="noopener noreferrer">Spotify</a>
+    <a class="big" href="https://music.apple.com/us/artist/cold-sludge/1563569938?at=1000l3bbu&itscg=30200&itsct=music_box_link&ls=1&app=music" rel="noopener noreferrer">Apple Music</a>
+    <a class="big" href="mailto:coldsludge@gmail.com" target="_self">coldsludge@gmail.com (booking &amp; inquiries)</a>
+
+    <div class="sep"></div>
+
+    <h2>Social Media &amp; Communities</h2>
+    <a class="big" href="https://instagram.com/n8t8m" rel="me noopener">Instagram</a>
+    <a class="big" href="https://www.snapchat.com/add/n8_t8m" rel="noopener">Snapchat</a>
+    <a class="big" href="https://tiktok.com/@n8t8m" rel="noopener">TikTok</a>
+    <a class="big" href="https://www.threads.net/@n8t8m?hl=en" rel="noopener">Threads</a>
+    <a class="big" href="https://www.goodreads.com/user/show/165867591-nate-tatem" rel="noopener">Goodreads (books)</a>
+    <a class="big" href="https://letterboxd.com/n8t8m/" rel="noopener">Letterboxd (movies &amp; tv)</a>
+    <a class="big" href="https://rateyourmusic.com/~n8t8m" rel="noopener">Rate Your Music (music)</a>
+    <a class="big" href="https://www.linkedin.com/in/n8t8m/" rel="me noopener">LinkedIn (resume)</a>
+    <a class="big" href="https://www.facebook.com/n8tatem/" rel="noopener">Facebook</a>
+
+    <div class="sep"></div>
+
+    <h2>Music Streaming Playlists</h2>
+    <a class="big" href="https://sdz.sh/u6JISM" rel="noopener">IRL Friends — sharing music from people I know</a>
+
+    <p class="note" style="margin-top:24px;">Website built by Nate Tatem.</p>
+  </div>
+</body>
+</html>
