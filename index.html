@@ -47,25 +47,36 @@
     hr { border:0; border-top:1px solid var(--border); margin:24px 0; }
     .note, .muted { color:var(--muted); }
 
-    /* Rowed link layout (scoped to .rowlinks) */
-    .rowlinks { display:flex; flex-wrap:wrap; margin:-6px; }
-    .rowlinks .big { display:inline-block; margin:6px; flex:1 1 260px; max-width:100%; }
-    .rowlinks.cols-2 .big { flex-basis:calc(50% - 12px); }
-    .rowlinks.cols-3 .big { flex-basis:calc(33.333% - 12px); }
-    @media (max-width:540px){ .rowlinks .big { flex-basis:100%; } }
-
     /* Simple rule to visually separate sections like your --- in Rmd */
     .sep { border-top:1px solid var(--border); margin:28px 0; }
+    /* Grids */
     .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
-
 .link-grid a.big {
-  margin: 0; /* remove old top/bottom margins */
+  margin: 0;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
+/* make buttons that wrap to multiple lines span both columns */
+.link-grid a.big {
+  grid-column: span 1;
+}
+
+@media (min-width: 540px) {
+  .link-grid a.big {
+    grid-column: span 1;
+  }
+  .link-grid a.big:has(br),
+  .link-grid a.big:has(span),
+  .link-grid a.big:has(em),
+  .link-grid a.big:has(strong) {
+    grid-column: span 2;
+  }
+}
   </style>
 
 </head>
