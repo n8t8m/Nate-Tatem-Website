@@ -20,6 +20,13 @@
     html, body { background:var(--bg); color:var(--text); line-height:1.55; margin:0; }
     .wrap { margin:2.2rem 0; padding:0 16px; max-width:none; }
     h1, h2 { font-weight:700; }
+    .subtitle {
+  display: block;              /* makes it behave like a separate line */
+  font-size: 1.5rem;           /* between the title and body text size */
+  font-weight: 600;
+  margin-top: -0.3rem;         /* pulls it closer to the main title */
+  margin-bottom: 0.2rem;       /* adds a small gap before Location line */
+}
     a { color:var(--accent); }
     a:visited { color:var(--accent-visited); }
     a.big {
@@ -46,7 +53,7 @@
 <body>
   <div class="wrap">
     <h1>NATE TATEM</h1>
-    <p><strong>Sociologist, Musician, &amp; Music Producer</strong><br>
+    <p><strong class="subtitle">Sociologist, Musician, &amp; Music Producer</strong><br>
     <strong>Location:</strong> Bellingham, Washington, USA<br>
     <strong>Email:</strong> 
       <a href="mailto:n8tatem@gmail.com" target="_self">n8tatem@gmail.com</a> or 
