@@ -146,25 +146,45 @@
 
     <div class="sep"></div>
 
-    <p class="note">Website built by Nate Tatem in RStudio.</p>
+    <p class="note">Website built by Nate Tatem.</p>
   </div>
 
   <script>
     // detect wrapped buttons and make them full-width
     (function(){
-      function markWrapped(){
-        document.querySelectorAll('.link-grid').forEach(grid=>{
-          grid.querySelectorAll('a.big').forEach(a=>{
-            a.classList.remove('full');
-            const style=getComputedStyle(a);
-            const lineHeight=parseFloat(style.lineHeight);
-            const lines=Math.round(a.scrollHeight/lineHeight);
-            if(lines>1)a.classList.add('full');
-          });
+      const anchors=Array.from(document.querySelectorAll('.link-grid a.big'));
+      if(!anchors.length)return;
+
+      const measureLines=a=>{
+        const style=getComputedStyle(a);
+        const lineHeight=parseFloat(style.lineHeight)||1;
+        const paddingTop=parseFloat(style.paddingTop)||0;
+        const paddingBottom=parseFloat(style.paddingBottom)||0;
+        const contentHeight=a.getBoundingClientRect().height-paddingTop-paddingBottom;
+        const lines=contentHeight/lineHeight;
+        a.classList.toggle('full',lines>1.1);
+      };
+
+      const updateAll=()=>{
+        anchors.forEach(measureLines);
+      };
+
+      if('ResizeObserver' in window){
+        const observer=new ResizeObserver(entries=>{
+          entries.forEach(entry=>measureLines(entry.target));
         });
+        anchors.forEach(a=>observer.observe(a));
+      } else {
+        window.addEventListener('resize',updateAll);
       }
-      window.addEventListener('load',markWrapped);
-      window.addEventListener('resize',markWrapped);
+
+      window.addEventListener('load',updateAll);
+
+      if(document.fonts&&document.fonts.ready){
+        document.fonts.ready.then(updateAll);
+      }
+
+      updateAll();
     })();
   </script>
 </body>
