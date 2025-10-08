@@ -66,16 +66,38 @@
       cursor:pointer;
       font-weight:600;
       list-style:none;
+      background:#1b1d23;
+      border-radius:var(--rad);
     }
-    .section summary::-webkit-details-marker{display:none;}
-    .section summary::after{
+    .section[open] > summary{
+      border-bottom:1px solid var(--border);
+      border-radius:var(--rad) var(--rad) 0 0;
+    }
+    details > summary::-webkit-details-marker{display:none;}
+    details > summary::after{
       content:"\25BC";
       float:right;
       transition:transform 0.2s ease;
     }
-    .section[open] summary::after{transform:rotate(180deg);} 
+    details[open] > summary::after{transform:rotate(180deg);}
     .section-content{padding:0 var(--pad) var(--pad);}
     .section-content p{margin-top:0;}
+    .section-content details{
+      border:1px solid var(--border);
+      border-radius:var(--rad);
+      background:#15161a;
+      margin:12px 0;
+    }
+    .section-content details > summary{
+      padding:var(--pad);
+      background:#1b1d23;
+      border-radius:var(--rad);
+    }
+    .section-content details[open] > summary{
+      border-bottom:1px solid var(--border);
+      border-radius:var(--rad) var(--rad) 0 0;
+    }
+    .sub-section-content{padding:0 var(--pad) var(--pad);}
   </style>
 </head>
 
@@ -94,8 +116,13 @@
       <summary>Scientific Projects &amp; Publications</summary>
       <div class="section-content">
         <p class="muted">Bachelor of Arts in Sociology &amp; Certificate in Social Science Data Analysis (Western Washington University — 2024)</p>
-        <a class="big" href="https://www.mdpi.com/2071-1050/17/19/8833">Photo Portraiture Enhances Empathy for Birds with Potential Benefits for Conservation and Sustainability (Whitley et al., 2025)</a>
-        <a class="big" href="https://wp.wwu.edu/nsfaward2240023/">Animal Images, Empathy, and Conservation</a>
+        <details class="sub-section">
+          <summary>Animal Images, Empathy, and Conservation</summary>
+          <div class="sub-section-content">
+            <a class="big" href="https://www.mdpi.com/2071-1050/17/19/8833">Photo Portraiture Enhances Empathy for Birds with Potential Benefits for Conservation and Sustainability (Whitley et al., 2025)</a>
+            <a class="big" href="https://wp.wwu.edu/nsfaward2240023/">Animal Images, Empathy, &amp; Conservation - Project Website</a>
+          </div>
+        </details>
         <a class="big" href="https://osf.io/zuqg4">Tripping Hazard: Psychedelics User Typologies and Differential Risks of Health-Related Outcomes (Preregistration)</a>
       </div>
     </details>
