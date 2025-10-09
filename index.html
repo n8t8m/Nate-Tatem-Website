@@ -40,7 +40,9 @@
     a{color:var(--accent);}
     a:visited{color:var(--accent-visited);}
     a.big{
-      display:block;
+      display:flex;
+      align-items:center;
+      gap:12px;
       padding:var(--pad);
       border:1px solid var(--border);
       border-radius:var(--rad);
@@ -52,6 +54,13 @@
       margin:12px 0;
     }
     a.big:hover,a.big:focus{background:var(--card-hover);outline:none;}
+
+    a.big svg.logo-icon{
+      width:26px;
+      height:26px;
+      flex-shrink:0;
+      border-radius:6px;
+    }
 
     hr{border-top:1px solid var(--border);}
     .note,.muted{color:var(--muted);}
@@ -131,27 +140,141 @@
           </div>
         </details>
         <a class="big" href="https://osf.io/zuqg4">Tripping Hazard: Psychedelics User Typologies and Differential Risks of Health-Related Outcomes (Preregistration)</a>
-        <a class="big" href="https://orcid.org/0009-0002-8959-082X">Open Researcher and Contributor ID (ORCiD)</a>
-        <a class="big" href="https://osf.io/nkf5h/">Open Science Framework (OSF)</a>
-        <a class="big" href="https://sciprofiles.com/profile/4597813">SciProfiles</a>
-        <a class="big" href="https://www.scilit.com/scholars/32011373">Scilit</a>
+        <a class="big" href="https://orcid.org/0009-0002-8959-082X">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#a6ce39"/>
+            <text x="12" y="14.5" fill="#ffffff" font-family="'Fira Code', 'Fira Sans', Arial, sans-serif" font-size="9" font-weight="700" text-anchor="middle">iD</text>
+          </svg>
+          Open Researcher and Contributor ID (ORCiD)
+        </a>
+        <a class="big" href="https://osf.io/nkf5h/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#00a7d0"/>
+            <path d="M8 9.2l4-2.7 4 2.7-1.5 4.8H9.5z" fill="#0089a9" opacity="0.35"/>
+            <path d="M8 9l7.6.1" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M8.6 10.3l3.4 4.6" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M15.4 10.3l-3.4 4.6" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+            <circle cx="8.1" cy="9.1" r="1.5" fill="#ffffff"/>
+            <circle cx="15.9" cy="9.1" r="1.5" fill="#ffffff"/>
+            <circle cx="12" cy="15.7" r="1.6" fill="#ffffff"/>
+          </svg>
+          Open Science Framework (OSF)
+        </a>
+        <a class="big" href="https://sciprofiles.com/profile/4597813">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polygon points="12,2.8 20,7.2 20,16.8 12,21.2 4,16.8 4,7.2" fill="#1b4b8c"/>
+            <path d="M9 9.4c1-1.1 2.5-1.7 4.2-1.7 2.4 0 4.3 1.4 4.3 3.6 0 1.7-1.1 2.9-2.8 3.3l-2 .4c-.8.2-1.3.6-1.3 1.1 0 .7.6 1.1 1.7 1.1 1 0 1.9-.3 2.8-.8l.8 1.5c-1.1.7-2.5 1.1-3.9 1.1-2.5 0-4.2-1.2-4.2-3 0-1.4 1-2.4 2.6-2.8l1.9-.4c.9-.2 1.5-.7 1.5-1.4 0-.9-.8-1.5-2.1-1.5-1.1 0-2.1.4-2.9 1.1z" fill="#ffffff"/>
+          </svg>
+          SciProfiles
+        </a>
+        <a class="big" href="https://www.scilit.com/scholars/32011373">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#2b6cb0"/>
+            <path d="M9 9.5c.5-.9 1.6-1.5 2.9-1.5 1.9 0 3.1 1.1 3.1 2.8 0 1.2-.7 2-1.9 2.4l-1.6.5c-.7.2-1 .5-1 1 0 .6.5 1 1.4 1 1 0 1.9-.3 2.7-.9l.7 1.4c-1 .8-2.4 1.2-3.8 1.2-2.1 0-3.6-1.1-3.6-2.8 0-1.3.9-2.2 2.3-2.6l1.5-.4c.6-.2.9-.5.9-.9 0-.6-.5-1-1.3-1-.8 0-1.5.4-1.9 1z" fill="#ffffff"/>
+          </svg>
+          Scilit
+        </a>
       </div>
     </details>
 
     <details class="section">
       <summary>SOLO MUSIC PROJECTS</summary>
       <div class="section-content">
-        <a class="big" href="https://n8t8m.bandcamp.com/">Bandcamp — downloads &amp; back catalog</a>
-        <a class="big" href="https://open.spotify.com/artist/280AVnwGDOdUkVxobsOkqB">Spotify</a>
-        <a class="big" href="https://music.apple.com/us/artist/nate-tatem/1448048139">Apple Music</a>
-        <a class="big" href="https://music.youtube.com/channel/UCMEGdbPtAvLXdA23YEi4zVA">YouTube Music</a>
-        <a class="big" href="https://tidal.com/browse/artist/10782310">TIDAL</a>
-        <a class="big" href="https://music.amazon.co.uk/artists/B07MP1PDHW/nate-tatem">Amazon Music</a>
-        <a class="big" href="https://www.iheart.com/artist/nate-tatem-32695853/">iHeart Radio</a>
-        <a class="big" href="https://www.deezer.com/us/artist/56573232">Deezer</a>
-        <a class="big" href="https://us.napster.com/artist/nate-tatem">Napster</a>
-        <a class="big" href="https://soundcloud.com/natetatem">SoundCloud</a>
-        <a class="big" href="https://audiomack.com/natem262">Audiomack</a>
+        <a class="big" href="https://n8t8m.bandcamp.com/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polygon fill="#629aa9" points="4,6 13.5,6 20,18 10.5,18"/>
+          </svg>
+          Bandcamp — downloads &amp; back catalog
+        </a>
+        <a class="big" href="https://open.spotify.com/artist/280AVnwGDOdUkVxobsOkqB">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#1db954"/>
+            <path d="M7.1 9.6c3.1-.9 6.6-.5 9.8 1" fill="none" stroke="#0b0c10" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M7.6 12.5c2.6-.8 5.7-.5 8.5.8" fill="none" stroke="#0b0c10" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M7.9 15.2c2.1-.6 4.6-.4 6.9.6" fill="none" stroke="#0b0c10" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          Spotify
+        </a>
+        <a class="big" href="https://music.apple.com/us/artist/nate-tatem/1448048139">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="appleMusicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fa233b"/>
+                <stop offset="50%" stop-color="#fb5c74"/>
+                <stop offset="100%" stop-color="#fd7d9c"/>
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="11" fill="url(#appleMusicGradient)"/>
+            <path fill="#ffffff" d="M14.8 5.6v7.2c0 1.9-1.6 3.5-3.5 3.5-1.5 0-2.7-.9-3.2-2.3l1.6-.6c.3.7 1 1.1 1.6 1.1.9 0 1.7-.8 1.7-1.7V7.2l-2.2.5V5.4z"/>
+          </svg>
+          Apple Music
+        </a>
+        <a class="big" href="https://music.youtube.com/channel/UCMEGdbPtAvLXdA23YEi4zVA">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#ff0000"/>
+            <circle cx="12" cy="12" r="6.3" fill="#0b0c10" opacity="0.2"/>
+            <polygon points="10,8.8 15,12 10,15.2" fill="#ffffff"/>
+          </svg>
+          YouTube Music
+        </a>
+        <a class="big" href="https://tidal.com/browse/artist/10782310">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polygon fill="#ffffff" points="8.3,5.4 10.6,7.7 8.3,10 6,7.7"/>
+            <polygon fill="#ffffff" points="12.5,5.4 14.8,7.7 12.5,10 10.2,7.7"/>
+            <polygon fill="#ffffff" points="16.7,5.4 19,7.7 16.7,10 14.4,7.7"/>
+            <polygon fill="#ffffff" points="12.5,9.6 14.8,11.9 12.5,14.2 10.2,11.9"/>
+          </svg>
+          TIDAL
+        </a>
+        <a class="big" href="https://music.amazon.co.uk/artists/B07MP1PDHW/nate-tatem">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="1.5" y="3" width="21" height="18" rx="5" fill="#232f3e"/>
+            <path d="M5.5 15.7c2.3 1.1 4.9 1.4 7.3.8 1.6-.3 3-.9 4.3-1.9l.9 1.2c-1.5 1.1-3.3 1.9-5.1 2.2-2.9.6-5.8.3-8.5-.9z" fill="#ff9900"/>
+            <path d="M14 7.6c.8 0 1.4.5 1.6 1.2.2.8-.2 1.6-1 2-.7.4-1.5.4-2.1-.2v2.5h-1.6V7.9h1.6v.5c.5-.5 1-.8 1.5-.8z" fill="#ffffff"/>
+          </svg>
+          Amazon Music
+        </a>
+        <a class="big" href="https://www.iheart.com/artist/nate-tatem-32695853/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="#c6002b" d="M12 6.1c-1.4-1.9-4.5-2-6 0-1 1.4-.8 3.4.6 5.2L12 18l5.4-6.7c1.4-1.8 1.6-3.8.6-5.2-1.5-2-4.6-1.9-6 0z"/>
+            <path fill="#ffffff" opacity="0.2" d="M12 8.1c-.9-1.2-2.8-1.2-3.7 0-.6.8-.5 2 .4 3.2L12 15l3.3-3.7c.9-1.2 1-2.4.4-3.2-.9-1.2-2.8-1.2-3.7 0z"/>
+          </svg>
+          iHeart Radio
+        </a>
+        <a class="big" href="https://www.deezer.com/us/artist/56573232">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="10" width="2.6" height="4" fill="#ff8c42"/>
+            <rect x="6.3" y="8.5" width="2.6" height="5.5" fill="#ffcd3c"/>
+            <rect x="9.6" y="7" width="2.6" height="7" fill="#a0d9d6"/>
+            <rect x="12.9" y="8" width="2.6" height="6" fill="#5ac8fa"/>
+            <rect x="16.2" y="9.2" width="2.6" height="4.8" fill="#b26ef8"/>
+          </svg>
+          Deezer
+        </a>
+        <a class="big" href="https://us.napster.com/artist/nate-tatem">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#004f9f"/>
+            <path fill="#ffffff" d="M12 7.2a4.8 4.8 0 0 0-4.8 4.8 4.8 4.8 0 0 0 3.4 4.6v-1.9c-1-.6-1.6-1.6-1.6-2.7A3 3 0 0 1 12 9a3 3 0 0 1 3 3c0 1.1-.6 2.1-1.6 2.7v1.9a4.8 4.8 0 0 0 3.4-4.6A4.8 4.8 0 0 0 12 7.2z"/>
+            <path fill="#ffffff" d="M7.5 8.4l-1.4-.8c.8-1.2 2.1-2 3.5-2.3l.3 1.6c-1 .2-1.8.8-2.4 1.5z"/>
+            <path fill="#ffffff" d="M17.9 8.4c-.6-.8-1.5-1.3-2.4-1.5l.3-1.6c1.4.3 2.7 1.1 3.5 2.3z"/>
+          </svg>
+          Napster
+        </a>
+        <a class="big" href="https://soundcloud.com/natetatem">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="#ff5500" d="M9.2 8.5a4.3 4.3 0 0 1 4.1-3.4c2.3 0 4.2 1.9 4.2 4.2.8-.4 1.8-.2 2.5.3.8.6 1.2 1.5 1.2 2.5 0 1.8-1.4 3.2-3.2 3.2H7.4a2.6 2.6 0 0 1-2.6-2.6c0-1.4 1-2.4 2.3-2.6.2-1.1.9-2 2.1-2.3z"/>
+            <rect x="5.5" y="9.3" width="1" height="5.4" fill="#ffa366" rx="0.4"/>
+            <rect x="7" y="8.7" width="1" height="6" fill="#ffa366" rx="0.4"/>
+            <rect x="8.5" y="8.1" width="1" height="6.6" fill="#ffa366" rx="0.4"/>
+          </svg>
+          SoundCloud
+        </a>
+        <a class="big" href="https://audiomack.com/natem262">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline points="4 15 7.3 9 10 14 13.1 7.5 16 13 19 9" fill="none" stroke="#ff9f0a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Audiomack
+        </a>
         <a class="big" href="https://docs.google.com/document/d/1abXACVfcKZyuInPH2lasOvWFJ02yWaGi-sxxujkwZ5Q/pub">Project Explanation Essay: The Permutation Series (2023)</a>
       </div>
     </details>
@@ -161,11 +284,65 @@
       <div class="section-content">
           <br>
         <p class="muted">Band member since 2024 - keys, synths, and drum set.</p>
-        <a class="big" href="https://beacons.ai/coldsludge">Website — upcoming live shows, music releases, &amp; side projects</a>
-        <a class="big" href="https://www.instagram.com/coldsludge/">Instagram</a>
-        <a class="big" href="https://coldsludge.bandcamp.com/">Bandcamp — stream &amp; purchase</a>
-        <a class="big" href="https://open.spotify.com/artist/2ASDeYcriVq6loGcZhtN5p">Spotify</a>
-        <a class="big" href="https://music.apple.com/us/artist/cold-sludge/1563569938">Apple Music</a>
+        <a class="big" href="https://beacons.ai/coldsludge">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="beaconsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8a63f4"/>
+                <stop offset="100%" stop-color="#ff7de9"/>
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="11" fill="url(#beaconsGradient)"/>
+            <path d="M8.4 7.4h4.9c1.9 0 3.2 1.1 3.2 2.8 0 1.1-.6 2-1.6 2.4 1.2.3 2 1.3 2 2.7 0 1.8-1.4 3.2-3.6 3.2H8.4z" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Website — upcoming live shows, music releases, &amp; side projects
+        </a>
+        <a class="big" href="https://www.instagram.com/coldsludge/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="instagramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#feda75"/>
+                <stop offset="25%" stop-color="#fa7e1e"/>
+                <stop offset="50%" stop-color="#d62976"/>
+                <stop offset="75%" stop-color="#962fbf"/>
+                <stop offset="100%" stop-color="#4f5bd5"/>
+              </linearGradient>
+            </defs>
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#instagramGradient)"/>
+            <circle cx="12" cy="12" r="4.3" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="16.2" cy="7.8" r="1" fill="#ffffff"/>
+          </svg>
+          Instagram
+        </a>
+        <a class="big" href="https://coldsludge.bandcamp.com/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polygon fill="#629aa9" points="4,6 13.5,6 20,18 10.5,18"/>
+          </svg>
+          Bandcamp — stream &amp; purchase
+        </a>
+        <a class="big" href="https://open.spotify.com/artist/2ASDeYcriVq6loGcZhtN5p">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#1db954"/>
+            <path d="M7.1 9.6c3.1-.9 6.6-.5 9.8 1" fill="none" stroke="#0b0c10" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M7.6 12.5c2.6-.8 5.7-.5 8.5.8" fill="none" stroke="#0b0c10" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M7.9 15.2c2.1-.6 4.6-.4 6.9.6" fill="none" stroke="#0b0c10" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          Spotify
+        </a>
+        <a class="big" href="https://music.apple.com/us/artist/cold-sludge/1563569938">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="appleMusicGradientCold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fa233b"/>
+                <stop offset="50%" stop-color="#fb5c74"/>
+                <stop offset="100%" stop-color="#fd7d9c"/>
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="11" fill="url(#appleMusicGradientCold)"/>
+            <path fill="#ffffff" d="M14.8 5.6v7.2c0 1.9-1.6 3.5-3.5 3.5-1.5 0-2.7-.9-3.2-2.3l1.6-.6c.3.7 1 1.1 1.6 1.1.9 0 1.7-.8 1.7-1.7V7.2l-2.2.5V5.4z"/>
+          </svg>
+          Apple Music
+        </a>
         <a class="big" href="mailto:coldsludge@gmail.com" target="_self">coldsludge@gmail.com (booking &amp; inquiries)</a>
       </div>
     </details>
@@ -173,16 +350,93 @@
     <details class="section">
       <summary>SOCIAL MEDIA &amp; ONLINE COMMUNITIES</summary>
       <div class="section-content">
-        <a class="big" href="https://www.linkedin.com/in/n8t8m/">LinkedIn (resume)</a>
-        <a class="big" href="https://instagram.com/n8t8m">Instagram</a>
-        <a class="big" href="https://www.threads.net/@n8t8m?hl=en">Threads</a>
-        <a class="big" href="https://tiktok.com/@n8t8m">TikTok</a>
-        <a class="big" href="https://www.goodreads.com/user/show/165867591-nate-tatem">Goodreads (books)</a>
-        <a class="big" href="https://letterboxd.com/n8t8m/">Letterboxd (movies &amp; tv)</a>
-        <a class="big" href="https://rateyourmusic.com/~n8t8m">Rate Your Music</a>
-        <a class="big" href="https://www.facebook.com/n8tatem/">Facebook</a>
-        <a class="big" href="https://www.snapchat.com/add/n8_t8m">Snapchat</a>
-        <a class="big" href="https://x.com/NateTatem">X (Twitter)</a>
+        <a class="big" href="https://www.linkedin.com/in/n8t8m/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#0a66c2"/>
+            <rect x="7.5" y="10.2" width="2.2" height="7.5" fill="#ffffff"/>
+            <circle cx="8.6" cy="7.3" r="1.2" fill="#ffffff"/>
+            <path d="M12.3 10.2h2.2v1.1c.6-.8 1.3-1.3 2.4-1.3 1.8 0 2.7 1.1 2.7 3v4.7h-2.2v-4.1c0-1-.4-1.6-1.2-1.6-.9 0-1.4.6-1.4 1.6v4.1h-2.5z" fill="#ffffff"/>
+          </svg>
+          LinkedIn (resume)
+        </a>
+        <a class="big" href="https://instagram.com/n8t8m">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="instagramGradientSocial" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#feda75"/>
+                <stop offset="25%" stop-color="#fa7e1e"/>
+                <stop offset="50%" stop-color="#d62976"/>
+                <stop offset="75%" stop-color="#962fbf"/>
+                <stop offset="100%" stop-color="#4f5bd5"/>
+              </linearGradient>
+            </defs>
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#instagramGradientSocial)"/>
+            <circle cx="12" cy="12" r="4.3" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="16.2" cy="7.8" r="1" fill="#ffffff"/>
+          </svg>
+          Instagram
+        </a>
+        <a class="big" href="https://www.threads.net/@n8t8m?hl=en">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#101010"/>
+            <path d="M12 6.5c-3 0-5.2 2.1-5.2 5 0 3.1 2.2 5.1 5.3 5.1 2.2 0 4-1.2 4.6-3 .3-1.1-.3-2.2-1.6-2.5-1.3-.3-2.8-.2-2.8-.2v1.5c-2.1 0-3.5-1.1-3.5-2.8S10.1 7.8 12 7.8c1.2 0 2 .4 2.7 1.2l1.2-1.5C15 6.8 13.7 6.5 12 6.5z" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.4 12.6c.6.8.6 1.9.1 2.8-.8 1.4-2.3 2.2-4 2.2-2.7 0-4.8-2-4.8-4.9 0-3 2.3-5.1 5.4-5.1" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          Threads
+        </a>
+        <a class="big" href="https://tiktok.com/@n8t8m">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="#000000"/>
+            <path d="M14 6.5v6.1c0 2-1.6 3.5-3.5 3.5S7 14.6 7 12.7c0-1.8 1.3-3.2 3-3.4v2c-.6.2-1 .8-1 1.4 0 .8.6 1.4 1.4 1.4 1 0 1.6-.8 1.6-1.8V6.5z" fill="#25f4ee"/>
+            <path d="M14 8.6c.8.6 1.7.9 2.7.9v2c-1.1 0-2-.3-2.7-.7z" fill="#fe2c55"/>
+            <path d="M14 6.5c.7.7 1.6 1.1 2.7 1.1v2.1c-1.1 0-2-.3-2.7-.8z" fill="#ffffff"/>
+          </svg>
+          TikTok
+        </a>
+        <a class="big" href="https://www.goodreads.com/user/show/165867591-nate-tatem">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#f4efe4"/>
+            <path d="M12.5 6.8c2.3 0 4 1.8 4 4.7 0 3-1.8 4.9-4.4 4.9-1.1 0-2-.4-2.7-1.2v3.7H9V7.1h1.4v1c.7-.9 1.6-1.3 2.6-1.3zm-.3 1.7c-1.6 0-2.7 1.3-2.7 3s1.1 3 2.7 3c1.6 0 2.7-1.3 2.7-3s-1.1-3-2.7-3z" fill="#6b4c2a"/>
+          </svg>
+          Goodreads (books)
+        </a>
+        <a class="big" href="https://letterboxd.com/n8t8m/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="4" fill="#14181c"/>
+            <circle cx="9" cy="12" r="2" fill="#ff8000"/>
+            <circle cx="12.5" cy="12" r="2" fill="#77dd77"/>
+            <circle cx="16" cy="12" r="2" fill="#5dade2"/>
+          </svg>
+          Letterboxd (movies &amp; tv)
+        </a>
+        <a class="big" href="https://rateyourmusic.com/~n8t8m">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#0f3d91"/>
+            <path d="M12 7.2l1.3 3.2 3.4.3-2.6 2.1.8 3.3-2.9-1.7-2.9 1.7.8-3.3-2.6-2.1 3.4-.3z" fill="#ffffff"/>
+          </svg>
+          Rate Your Music
+        </a>
+        <a class="big" href="https://www.facebook.com/n8tatem/">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#1877f2"/>
+            <path d="M13.4 9.1h2V7h-2c-2.3 0-3.6 1.3-3.6 3.5v1.5H8.9v2.1h1.9v4.8h2.3v-4.8h2l.3-2.1h-2.3v-1.3c0-.9.4-1.6 1.3-1.6z" fill="#ffffff"/>
+          </svg>
+          Facebook
+        </a>
+        <a class="big" href="https://www.snapchat.com/add/n8_t8m">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="11" fill="#fffc00"/>
+            <path d="M12 6.5c-2.2 0-4 1.8-4 4v5.6l1.3-.8 1.3.9 1.4-.9 1.4.9 1.3-.9 1.3.8V10.5c0-2.2-1.8-4-4-4z" fill="#ffffff" stroke="#111111" stroke-width="0.4" stroke-linejoin="round"/>
+          </svg>
+          Snapchat
+        </a>
+        <a class="big" href="https://x.com/NateTatem">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#000000"/>
+            <path d="M7.8 6h2.5l2.5 4 2.6-4h2.5l-3.9 5.7 4.2 6.3H16l-2.9-4.3-2.9 4.3H7.7l4.1-6z" fill="#ffffff"/>
+          </svg>
+          X (Twitter)
+        </a>
       </div>
     </details>
 
