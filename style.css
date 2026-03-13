@@ -187,3 +187,15 @@ main { padding: 18px 0 56px; }
 @media (max-width: 760px) {
   .grid-2, .grid-3, .links-grid, .page-grid { grid-template-columns: 1fr; }
 }
+
+/* Custom styles */
+:root {
+    --max: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
