@@ -4,6 +4,9 @@
   All colors are collected under :root.
   There are no frameworks or JavaScript dependencies.
 */
+/* Load the body font so visitors don't need it installed locally. */
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap');
+
 :root {
   --background: #f7f8f7;  /* slight off-white */
   --panel: #eaeded;       /* soft grey panels */
@@ -21,7 +24,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: Calibri, Aptos, Carlito, "Segoe UI", Arial, sans-serif;;
+  font-family: "Carlito", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.65;
 }
